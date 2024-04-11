@@ -14,7 +14,7 @@ ADD lance-modis-nrt-global-flood-mcdwd-f3.qmd /home/rstudio
 ADD /nyc_lead_dev home/rstudio
 
 ## give the rstudio user permissions on these files
-RUN chown -R rstudio /home/rstudio/
+##RUN chown -R rstudio /home/rstudio/
 
 # Add packages not part of rocker/geospatial
 RUN Rscript -e "install.packages('cubelyr')"
